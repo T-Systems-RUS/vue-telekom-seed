@@ -42,8 +42,8 @@ export default Vue.extend({
     Collapse
   },
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 });
 </script>
 
