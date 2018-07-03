@@ -1,29 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Header/>
+    <div class="view">
+      <router-view/>
     </div>
-    <router-view/>
+    <Footer/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script lang="ts">
+  import Vue from 'vue';
+  import Header from './components/root/Header/Header.vue';
+  import Footer from './components/root/Footer/Footer.vue';
+
+  export default Vue.extend({
+    name: 'App',
+    components: {
+      Header,
+      Footer
     }
+  });
+</script>
+
+<style lang="scss" scoped>
+  // For sticky footer
+  #app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
   }
-}
+
+  .view {
+    // Sticky footer
+    flex: 1;
+  }
+
 </style>
