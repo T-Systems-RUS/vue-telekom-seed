@@ -1,0 +1,3 @@
+[submodule "src/common/vue-telekom"]
+	path = src/common/vue-telekom
+	url = https://github.com/T-Systems-RUS/vue-telekom.git

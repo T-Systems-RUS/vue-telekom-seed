@@ -28,13 +28,19 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
   </div>
+  <Collapse>
+    Test
+  </Collapse>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import Collapse from '../common/vue-telekom/components/Collapse/Collapse.vue';
 
 export default Vue.extend({
-  name: 'HelloWorld',
+  components: {
+    Collapse
+  },
   props: {
     msg: String,
   },

@@ -5,6 +5,7 @@
   ],
   "linterOptions": {
     "exclude": [
+      "src/**",
       "node_modules/**"
     ]
   },
