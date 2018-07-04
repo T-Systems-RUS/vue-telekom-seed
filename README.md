@@ -57,3 +57,21 @@ vue ui
 After this import you project via UI and look at tasks.
 
 For more information on how to use Vue CLI please look at the [documentation](https://cli.vuejs.org/guide/).
+
+## WebStorm / Intellij IDEA configuration
+
+Enable ESlint plugin, Vue plugin and TypeScript integration.
+All of these should work by default.
+
+### Unit testing via Jest
+
+1. Click Run in the main toolbar
+2. Edit Configurations
+3. On the top left of the Run/Debug Configurations dialog, click the + sign.
+4. Choose Jest
+5. Name the new configuration "Jest"
+6. Under "Configuration file" select `jest.conf.js` from root
+7. Specify Jest package - `node_modules/jest`
+8. Click Apply 
+
+You can now both run Unit tests and debug them inside the IDE.
