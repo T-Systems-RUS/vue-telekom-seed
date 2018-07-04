@@ -7,7 +7,7 @@ This is a seed front-end application to use in most of our Vue.js projects.
 To get the initial code please clone this repo.
 
 Please note before building that this seed actually uses our T-Systems 
-[vue-telekom](https://github.com/T-Systems-RUS/vue-telekom/blob/master/styles/export-variables.scss) project internally.
+[vue-telekom](https://github.com/T-Systems-RUS/vue-telekom) project internally.
 Which is a collection of custom components and Telekom design styling. 
 
 And since *vue-telekom* is a submodule you will have to run this after cloning the project:
