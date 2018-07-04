@@ -63,7 +63,7 @@ For more information on how to use Vue CLI please look at the [documentation](ht
 
 ## WebStorm / Intellij IDEA configuration
 
-Enable ESlint plugin, Vue plugin and TypeScript integration.
+Enable TSlint plugin, Vue plugin and TypeScript integration.
 All of these should work by default.
 
 ### Unit testing via Jest
