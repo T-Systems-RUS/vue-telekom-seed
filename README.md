@@ -37,8 +37,11 @@ yarn build
 # Run unit tests
 yarn test:unit
 
-# Run e2e tests with output to console
-yarn test:e2e
+# e2e tests
+# First you need to start separate process with application
+yarn serve
+# And then run e2e tests pointing to the URL of the app
+yarn test:e2e --url localhost:8080
 
 # Perform TSLint code check
 yarn lint
