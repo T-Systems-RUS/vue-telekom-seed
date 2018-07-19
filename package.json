@@ -12,10 +12,12 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "vue": "^2.5.16",
+    "vue-i18n": "^8.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
     "@types/jest": "^22.0.1",
     "@vue/cli-plugin-e2e-nightwatch": "^3.0.0-beta.15",
     "@vue/cli-plugin-typescript": "^3.0.0-beta.15",
@@ -25,7 +27,8 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "ts-jest": "^22.4.6",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "yaml-loader": "^0.5.0"
   },
   "browserslist": [
     "> 1%",
