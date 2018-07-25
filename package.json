@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e --config nightwatch.config.js"
   },
   "dependencies": {
     "bulma": "^0.7.1",
@@ -24,6 +24,9 @@
     "@vue/cli-plugin-unit-jest": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
     "@vue/test-utils": "^1.0.0-beta.16",
+    "cucumber": "^4.2.1",
+    "cucumber-pretty": "^1.4.4",
+    "nightwatch-cucumber": "^9.1.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "ts-jest": "^22.4.6",
