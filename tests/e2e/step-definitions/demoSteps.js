@@ -1,5 +1,5 @@
-const {client} = require('nightwatch-cucumber');
-const {Given, Then, When} = require('cucumber');
+import {client} from 'nightwatch-cucumber';
+import {Given, Then, When} from 'cucumber';
 
 const demoPage = client.page.demoPage();
 
@@ -15,4 +15,5 @@ When('I click on the collapse', async () => {
 
 Then('I can see header', async () => {
   await demoPage.assert.containsText('@collapseHeader', 'Click me')
+  await demoPage.assert.elementCount('img', 3)
 });

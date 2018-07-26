@@ -24,6 +24,7 @@
     "@vue/cli-plugin-unit-jest": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
     "@vue/test-utils": "^1.0.0-beta.16",
+    "babel-preset-es2015": "^6.24.1",
     "cucumber": "^4.2.1",
     "cucumber-pretty": "^1.4.4",
     "nightwatch-cucumber": "^9.1.2",
