@@ -78,3 +78,23 @@ All of these should work by default.
 8. Click Apply 
 
 You can now both run Unit tests and debug them inside the IDE.
+
+### e2e testing via Nightwatch
+
+**Note that this is different from running via console** `yarn test:e2e` 
+**which also starts the http server and checks if port is in use.**
+
+**Prerequisite** : running application locally e.g. `yarn serve` or somewhere else.
+
+1. Click Run in the main toolbar
+2. Edit Configurations
+3. On the top left of the Run/Debug Configurations dialog, click the + sign.
+4. Choose Node.js
+5. Name the new configuration "Nightwatch"
+6. Under "JavaScript file" enter `node_modules\nightwatch\bin\runner.js`
+7. Under "Application parameters" enter `--config nightwatch.config.js --env chrome`
+8. Add environment variable `VUE_DEV_SERVER_URL` with value which is the location of your
+ application, in case of local `yarn serve` the value will be `http://localhost:8080/`
+9. Click Apply 
+
+You can now both run e2e tests and debug them inside the IDE.
