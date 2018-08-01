@@ -16,6 +16,7 @@
     "object-literal-sort-keys": false,
     "no-consecutive-blank-lines": false,
     "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
-    "arrow-parens": [true, "ban-single-arg-parens"]
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "member-access": [true, "no-public"]
   }
 }
