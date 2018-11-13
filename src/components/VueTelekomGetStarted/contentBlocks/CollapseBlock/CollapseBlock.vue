@@ -9,13 +9,13 @@
     <h4 class="title is-4">API</h4>
     <h5 class="title is-6">Properties</h5>
     <ul class="list">
-      <li class="list-item"><b>isOpen (type: String, required: false)</b>: to specify initial <i>expanded</i> state</li>
+      <li class="list-item"><b>isOpen (type: Boolean, required: false)</b>: to specify initial <i>expanded</i> state</li>
       <li class="list-item"><b>header (type: String, required: false)</b>: collapse block header</li>
     </ul>
     <h5 class="title is-6">Slots</h5>
     <ul class="list">
       <li class="list-item"><b>default</b>: collapse block content</li>
-      <li class="list-item"><b>header</b>: collapse block content</li>
+      <li class="list-item"><b>header</b>: collapse block header</li>
     </ul>
   </section>
 </template>
