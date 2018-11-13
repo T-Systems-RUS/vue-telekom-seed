@@ -12,6 +12,7 @@
         </div>
       </div>
     </div>
+    <div class="header-bar-top"/>
     <div class="header-bar nav-bar">
       <div class="container">
         <div class="header-bar-inner">
