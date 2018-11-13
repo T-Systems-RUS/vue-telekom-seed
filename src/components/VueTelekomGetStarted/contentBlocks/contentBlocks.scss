@@ -1,0 +1,22 @@
+@import '../../../common/vue-telekom/styles/base/variables';
+@import '../../../common/vue-telekom/styles/utilities/mixins';
+
+.content-block {
+  padding-bottom: $building-unit-x4;
+
+  .title {
+    margin-bottom: .5em;
+  }
+
+  p {
+    margin-bottom: $building-unit;
+  }
+
+  i {
+    background-color: $gray-248;
+    border: 1px solid $gray-178;
+    border-radius: $telekom-radius;
+    padding: 0 $building-unit-x0_25;
+    font-style: normal;
+  }
+}
