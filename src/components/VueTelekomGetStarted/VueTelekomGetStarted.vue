@@ -20,6 +20,13 @@
         <section class="content">
           <!--dirty hack to allow multiple refs with same key-->
           <template v-for="_i in 1">
+            <div class="content-block is-top">
+              <h2 class="title is-2 is-main">Get Started</h2>
+              <p>Vue-telekom is a collection of Telekom styles and base Vue components. Please refer to
+                <a href="https://github.com/T-Systems-RUS/vue-telekom" target="_blank">README</a> for more information on
+                how to start using Vue-telekom.
+              </p>
+            </div>
             <div
               ref="content"
               class="content-block-wrap"
@@ -50,6 +57,12 @@
               :id="UIComponent.Checkbox">
               <CheckboxBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Collapse">
+              <CollapseBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -67,6 +80,7 @@
   import BackToTopBlock from './contentBlocks/BackToTopBlock/BackToTopBlock.vue';
   import BreadcrumbsBlock from './contentBlocks/BreadcrumbsBlock/BreadcrumbsBlock.vue';
   import CheckboxBlock from './contentBlocks/CheckboxBlock/CheckboxBlock.vue';
+  import CollapseBlock from './contentBlocks/CollapseBlock/CollapseBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -79,7 +93,8 @@
       AlertBlock,
       BackToTopBlock,
       BreadcrumbsBlock,
-      CheckboxBlock
+      CheckboxBlock,
+      CollapseBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
@@ -148,8 +163,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../../common/vue-telekom/styles/base/variables';
-  @import '../../common/vue-telekom/styles/utilities/mixins';
+  @import './contentBlocks/contentBlocks';
   @import '../../common/vue-telekom/styles/base/typography';
 
   .vue-telekom {

@@ -1,18 +1,19 @@
+export const checkboxCodeExample = `
 <template>
-  <div class="examples-list">
-    <div class="example-item">
+  <div class="checkbox-examples">
+    <div class="checkbox-example">
       <label class="label is-size-7">Simple usage example (disables checkbox below):</label>
       <Checkbox :checked.sync="checkbox1">checkbox 1 ({{ checkbox1 }})</Checkbox>
     </div>
 
-    <div class="example-item">
+    <div class="checkbox-example">
       <label class="label is-size-7">Disabled state example (click checkbox above to toggle disabled state):</label>
       <Checkbox
         :disabled="checkbox1"
         :checked.sync="checkbox2">checkbox 2 ({{ checkbox2 }})</Checkbox>
     </div>
 
-    <div class="example-item">
+    <div class="checkbox-example">
       <label class="label is-size-7">Checkbox set object:</label>
       <Checkbox :checked.sync="checkboxSet.value1">value 1 ({{ checkboxSet.value1 }})</Checkbox>
       <Checkbox :checked.sync="checkboxSet.value2">value 2 ({{ checkboxSet.value2 }})</Checkbox>
@@ -43,15 +44,20 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../../contentBlocks';
 
-  .example-item {
+  .checkbox-example {
+    margin-bottom: 24px;
+
+    .label {
+      margin-bottom: 6px;
+    }
+
     .checkbox + .checkbox {
-      margin-left: $building-unit-x3;
+      margin-left: 24px;
     }
 
     .checkbox-value {
-      margin-top: $building-unit-x0_5;
+      margin-top: 6px;
     }
   }
-</style>
+</style>`;

@@ -70,6 +70,7 @@
   .code-block {
     position: relative;
     overflow: hidden;
+    border-top: 1px solid $gray-230;
 
     pre {
       padding: $building-unit-x2;

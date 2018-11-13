@@ -2,7 +2,14 @@
 @import '../../../common/vue-telekom/styles/utilities/mixins';
 
 .content-block {
-  padding-bottom: $building-unit-x4;
+  padding-top: $building-unit-x3;
+  padding-bottom: $building-unit-x3;
+  border-top: 1px dashed $gray-230;
+
+  &.is-top {
+    padding-top: 0;
+    border-top: 0;
+  }
 
   .title {
     margin-bottom: .5em;
@@ -18,5 +25,33 @@
     border-radius: $telekom-radius;
     padding: 0 $building-unit-x0_25;
     font-style: normal;
+  }
+
+  h4.title {
+    margin-bottom: $building-unit;
+    font-weight: $font-weight-regular;
+  }
+
+  h5.title {
+    margin-bottom: $building-unit_x0_5;
+    font-weight: $font-weight-regular;
+  }
+
+  ul.list {
+    list-style: disc;
+    padding-left: $building-unit-x3;
+    margin-bottom: $building-unit;
+  }
+
+  .example-item {
+    margin-bottom: $building-unit-x2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .label {
+      margin-bottom: $building-unit-x0_5;
+    }
   }
 }

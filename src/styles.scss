@@ -1,5 +1,6 @@
 @import '../src/common/vue-telekom/styles/export-variables';
 
-$font_path: '/fonts/';
+$assets_path: './common/vue-telekom/styles/assets/';
+$font_path: './common/vue-telekom/styles/assets/fonts/';
 
 @import '../src/common/vue-telekom/styles/styles';
