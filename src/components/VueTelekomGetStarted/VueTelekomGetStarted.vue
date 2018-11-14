@@ -93,6 +93,12 @@
               :id="UIComponent.FileUploader">
               <FileUploaderBlock @navigate="goToMenuItem($event)"/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.LoadingOverlay">
+              <LoadingOverlayBlock @navigate="goToMenuItem($event)"/>
+            </div>
           </template>
         </section>
       </div>
@@ -116,6 +122,7 @@
   import DatepickerBlock from './contentBlocks/DatepickerBlock/DatepickerBlock.vue';
   import DropdownBlock from './contentBlocks/DropdownBlock/DropdownBlock.vue';
   import FileUploaderBlock from './contentBlocks/FileUploaderBlock/FileUploaderBlock.vue';
+  import LoadingOverlayBlock from './contentBlocks/LoadingOverlayBlock/LoadingOverlayBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -134,7 +141,8 @@
       ConfirmModalBlock,
       DatepickerBlock,
       DropdownBlock,
-      FileUploaderBlock
+      FileUploaderBlock,
+      LoadingOverlayBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);

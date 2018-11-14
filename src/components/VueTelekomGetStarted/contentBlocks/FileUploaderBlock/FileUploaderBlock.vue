@@ -1,5 +1,5 @@
 <template>
-  <section class="content-block is-dropdown">
+  <section class="content-block is-file-uploader">
     <h2 class="title is-2 is-main">FileUploader</h2>
     <p>Really heavy component that handles managing files for upload in a very specific way as described below.
       <span class="important">PLEASE NOTE</span>: Because of that and many other reasons this component will
