@@ -41,6 +41,11 @@
     list-style: disc;
     padding-left: $building-unit-x3;
     margin-bottom: $building-unit;
+
+    ul.list {
+      list-style: circle;
+      padding-left: $building-unit-x1_5;
+    }
   }
 
   .example-item {
@@ -53,5 +58,9 @@
     .label {
       margin-bottom: $building-unit-x0_5;
     }
+  }
+
+  .important {
+    font-weight: $font-weight-bold;
   }
 }

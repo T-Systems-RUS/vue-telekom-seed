@@ -75,6 +75,24 @@
               :id="UIComponent.ConfirmModal">
               <ConfirmModalBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Datepicker">
+              <DatepickerBlock/>
+            </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Dropdown">
+              <DropdownBlock/>
+            </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.FileUploader">
+              <FileUploaderBlock @navigate="goToMenuItem($event)"/>
+            </div>
           </template>
         </section>
       </div>
@@ -95,6 +113,9 @@
   import CollapseBlock from './contentBlocks/CollapseBlock/CollapseBlock.vue';
   import CommonModalBlock from './contentBlocks/CommonModalBlock/CommonModalBlock.vue';
   import ConfirmModalBlock from './contentBlocks/ConfirmModalBlock/ConfirmModalBlock.vue';
+  import DatepickerBlock from './contentBlocks/DatepickerBlock/DatepickerBlock.vue';
+  import DropdownBlock from './contentBlocks/DropdownBlock/DropdownBlock.vue';
+  import FileUploaderBlock from './contentBlocks/FileUploaderBlock/FileUploaderBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -110,7 +131,10 @@
       CheckboxBlock,
       CollapseBlock,
       CommonModalBlock,
-      ConfirmModalBlock
+      ConfirmModalBlock,
+      DatepickerBlock,
+      DropdownBlock,
+      FileUploaderBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
@@ -184,6 +208,10 @@
 
   .vue-telekom {
     padding: 0 $building-unit;
+
+    .container {
+      min-width: $container-max-size;
+    }
   }
 
   .get-started {
@@ -245,7 +273,4 @@
       padding-left: $building-unit-x2;
     }
   }
-
-
-
 </style>

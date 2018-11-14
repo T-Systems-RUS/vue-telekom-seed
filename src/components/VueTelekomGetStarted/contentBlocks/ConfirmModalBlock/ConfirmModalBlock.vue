@@ -1,5 +1,5 @@
 <template>
-  <section class="content-block is-common-modal">
+  <section class="content-block is-confirm-modal">
     <h2 class="title is-2 is-main">ConfirmModal</h2>
     <p>A modal overlay, in which you can include any content you want. Please see the example below:</p>
     <ContentBlockExample>

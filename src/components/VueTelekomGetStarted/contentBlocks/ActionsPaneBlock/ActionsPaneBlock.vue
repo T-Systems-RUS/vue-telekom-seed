@@ -4,7 +4,9 @@
     <p>
       ActionsPane is a simple pane that has two buttons: <i>Share</i> and <i>Print</i>.
       <i>Share</i> button will open
-      <router-link :to="{query: {q: UIComponent.SharePane}}" target="_blank">SharePane</router-link>
+      <router-link
+        @click.native="goToMenuItem(UIComponent.SharePane)"
+        :to="{query: {q: UIComponent.SharePane}}">SharePane</router-link>
       flyout with the list of social networks the user can share the current page in.
       <i>Print</i> button will start page printing process.
       Please see the example below:

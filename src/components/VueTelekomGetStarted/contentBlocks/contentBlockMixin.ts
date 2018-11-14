@@ -8,5 +8,10 @@ export const contentBlockMixin = Vue.extend({
     return {
       UIComponent
     };
+  },
+  methods: {
+    goToMenuItem(item: UIComponent) {
+      this.$emit('navigate', item);
+    }
   }
 });
