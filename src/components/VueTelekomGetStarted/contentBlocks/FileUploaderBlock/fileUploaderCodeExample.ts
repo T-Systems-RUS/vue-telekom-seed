@@ -4,14 +4,14 @@ export const fileUploaderCodeExample = `<template>
       class="is-aligned-left"
       :value="tabValue"
       @input="updateTabWithDelay($event)">
-      <Tab :value="1">Example 1</Tab>
-      <Tab :value="2">Example 2</Tab>
-      <Tab :value="3">Example 3</Tab>
-      <Tab :value="4">Example 4</Tab>
+      <Tab value="1">Example 1</Tab>
+      <Tab value="2">Example 2</Tab>
+      <Tab value="3">Example 3</Tab>
+      <Tab value="4">Example 4</Tab>
     </Tabs>
 
     <div
-      v-if="tabValue === 1"
+      v-if="tabValue === '1'"
       class="example-item">
       <p class="title is-6">Example 1 (single file):</p>
       <FileUploader
@@ -33,7 +33,7 @@ export const fileUploaderCodeExample = `<template>
     </div>
 
     <div
-      v-if="tabValue === 2"
+      v-if="tabValue === '2'"
       class="example-item">
       <p class="title is-6">Example 2 (multiple files):</p>
       <FileUploader
@@ -55,7 +55,7 @@ export const fileUploaderCodeExample = `<template>
     </div>
 
     <div
-      v-if="tabValue === 3"
+      v-if="tabValue === '3'"
       class="example-item">
       <p class="title is-6">Example 3 (Image upload, single file):</p>
       <FileUploader
@@ -77,7 +77,7 @@ export const fileUploaderCodeExample = `<template>
     </div>
 
     <div
-      v-if="tabValue === 4"
+      v-if="tabValue === '4'"
       class="example-item">
       <p class="title is-6">Example 4 (Image upload, multiple files):</p>
       <FileUploader
@@ -127,7 +127,7 @@ export const fileUploaderCodeExample = `<template>
     },
     data() {
       return {
-        tabValue: 1
+        tabValue: '1'
       };
     },
     computed: {
@@ -136,9 +136,9 @@ export const fileUploaderCodeExample = `<template>
       }
     },
     methods: {
-      updateTabWithDelay(tabValue: number) {
+      updateTabWithDelay(tabValue: string) {
         // necessary for FileUploader to be destroyed before it is created on new tab
-        this.tabValue = 0;
+        this.tabValue = '';
         Vue.nextTick(() => {
           this.tabValue = tabValue;
         });

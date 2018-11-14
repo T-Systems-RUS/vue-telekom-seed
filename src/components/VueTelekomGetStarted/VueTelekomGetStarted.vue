@@ -31,7 +31,7 @@
               ref="content"
               class="content-block-wrap"
               :id="UIComponent.ActionsPane">
-              <ActionsPaneBlock/>
+              <ActionsPaneBlock @navigate="goToMenuItem($event)"/>
             </div>
             <div
               ref="content"
@@ -99,6 +99,18 @@
               :id="UIComponent.LoadingOverlay">
               <LoadingOverlayBlock @navigate="goToMenuItem($event)"/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Pagination">
+              <PaginationBlock/>
+            </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.RadioButton">
+              <RadioButtonBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -123,6 +135,8 @@
   import DropdownBlock from './contentBlocks/DropdownBlock/DropdownBlock.vue';
   import FileUploaderBlock from './contentBlocks/FileUploaderBlock/FileUploaderBlock.vue';
   import LoadingOverlayBlock from './contentBlocks/LoadingOverlayBlock/LoadingOverlayBlock.vue';
+  import PaginationBlock from './contentBlocks/PaginationBlock/PaginationBlock.vue';
+  import RadioButtonBlock from './contentBlocks/RadioButtonBlock/RadioButtonBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -142,7 +156,9 @@
       DatepickerBlock,
       DropdownBlock,
       FileUploaderBlock,
-      LoadingOverlayBlock
+      LoadingOverlayBlock,
+      PaginationBlock,
+      RadioButtonBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);

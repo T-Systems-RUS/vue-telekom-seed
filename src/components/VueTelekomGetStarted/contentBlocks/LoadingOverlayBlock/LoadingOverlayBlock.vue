@@ -6,6 +6,13 @@
       <LoadingOverlayExample slot="example"/>
       <template slot="code">{{ loadingOverlayCodeExample }}</template>
     </ContentBlockExample>
+    <p>
+      You can also check second example in
+      <router-link
+        @click.native="goToMenuItem(UIComponent.CommonModal)"
+        :to="{query: {q: UIComponent.CommonModal}}">CommonModal</router-link>
+      component description.
+    </p>
     <h4 class="title is-4">API</h4>
     <h5 class="title is-6">Properties</h5>
     <ul class="list">
