@@ -12,6 +12,10 @@
       <li class="list-item"><b>loadingState (type: Boolean, required: false)</b>: specifies whether loading process is
         going on and shows LoadingOverlay component if true</li>
     </ul>
+    <h5 class="title is-6">Events</h5>
+    <ul class="list">
+      <li class="list-item"><b>exit ()</b>: triggers when close button is clicked</li>
+    </ul>
     <h5 class="title is-6">Slots</h5>
     <ul class="list">
       <li class="list-item"><b>modal-title</b>: inserts modal title</li>

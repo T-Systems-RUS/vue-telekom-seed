@@ -69,6 +69,12 @@
               :id="UIComponent.CommonModal">
               <CommonModalBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.ConfirmModal">
+              <ConfirmModalBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -88,6 +94,7 @@
   import CheckboxBlock from './contentBlocks/CheckboxBlock/CheckboxBlock.vue';
   import CollapseBlock from './contentBlocks/CollapseBlock/CollapseBlock.vue';
   import CommonModalBlock from './contentBlocks/CommonModalBlock/CommonModalBlock.vue';
+  import ConfirmModalBlock from './contentBlocks/ConfirmModalBlock/ConfirmModalBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -102,7 +109,8 @@
       BreadcrumbsBlock,
       CheckboxBlock,
       CollapseBlock,
-      CommonModalBlock
+      CommonModalBlock,
+      ConfirmModalBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
