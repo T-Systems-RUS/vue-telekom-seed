@@ -1,7 +1,8 @@
 <template>
   <section class="content-block is-loading-overlay">
     <h2 class="title is-2 is-main">LoadingOverlay</h2>
-    <p>Loading progress bar with the white translucent overlay under it.</p>
+    <p>Loading progress bar with the white translucent overlay under it (usually added at the top of each page).
+      Please see the example below:</p>
     <ContentBlockExample>
       <LoadingOverlayExample slot="example"/>
       <template slot="code">{{ loadingOverlayCodeExample }}</template>

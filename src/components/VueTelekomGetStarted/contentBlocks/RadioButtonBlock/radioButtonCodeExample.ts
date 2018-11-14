@@ -37,7 +37,7 @@ export const radioButtonCodeExample = `<template>
       };
     },
     methods: {
-      setValue(value: {}) {
+      setValue(value: string) {
         this.radioValue = value;
       }
     }
@@ -56,5 +56,4 @@ export const radioButtonCodeExample = `<template>
       margin-top: $building-unit-x0_5;
     }
   }
-</style>
-`;
+</style>`;

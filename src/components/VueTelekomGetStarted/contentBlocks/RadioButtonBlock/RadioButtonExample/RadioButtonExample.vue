@@ -37,7 +37,7 @@
       };
     },
     methods: {
-      setValue(value: {}) {
+      setValue(value: string) {
         this.radioValue = value;
       }
     }
