@@ -135,6 +135,24 @@
               :id="UIComponent.Slider">
               <SliderBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Tabs">
+              <TabsBlock/>
+            </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.ToggleVisibleField">
+              <ToggleVisibleFieldBlock/>
+            </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Tooltip">
+              <TooltipBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -165,10 +183,13 @@
   import SimpleFileListBlock from './contentBlocks/SimpleFileListBlock/SimpleFileListBlock.vue';
   import SimpleFileUploaderBlock from './contentBlocks/SimpleFileUploaderBlock/SimpleFileUploaderBlock.vue';
   import SliderBlock from './contentBlocks/SliderBlock/SliderBlock.vue';
+  import TabsBlock from './contentBlocks/TabsBlock/TabsBlock.vue';
+  import ToggleVisibleFieldBlock from './contentBlocks/ToggleVisibleFieldBlock/ToggleVisibleFieldBlock.vue';
+  import TooltipBlock from './contentBlocks/TooltipBlock/TooltipBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
-  const TOP_GAP = 70;
+  const TOP_GAP = 100;
 
   export default Vue.extend({
     components: {
@@ -189,7 +210,11 @@
       RadioButtonBlock,
       SelectboxBlock,
       SimpleFileListBlock,
-      SliderBlock
+      SimpleFileUploaderBlock,
+      SliderBlock,
+      TabsBlock,
+      ToggleVisibleFieldBlock,
+      TooltipBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
@@ -324,7 +349,7 @@
 
     .content {
       width: 75%;
-      padding: $building-unit-x3 $building-unit;
+      padding: $building-unit-x3 0 ($building-unit-x5 * 2);
       padding-left: $building-unit-x2;
     }
   }

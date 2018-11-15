@@ -7,6 +7,16 @@
       <SliderExample slot="example"/>
       <template slot="code">{{ sliderCodeExample }}</template>
     </ContentBlockExample>
+    <h4 class="title is-4">Slider API</h4>
+    <h5 class="title is-6">Slots</h5>
+    <ul class="list">
+      <li><b>default</b>: for the Slide component list</li>
+    </ul>
+    <h4 class="title is-4">Slide API</h4>
+    <h5 class="title is-6">Slots</h5>
+    <ul class="list">
+      <li><b>default</b>: for the Slide item content</li>
+    </ul>
   </section>
 </template>
 
