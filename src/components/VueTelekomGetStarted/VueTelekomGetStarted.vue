@@ -123,6 +123,12 @@
               :id="UIComponent.SimpleFileList">
               <SimpleFileListBlock @navigate="goToMenuItem($event)"/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.SimpleFileUploader">
+              <SimpleFileUploaderBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -151,6 +157,7 @@
   import RadioButtonBlock from './contentBlocks/RadioButtonBlock/RadioButtonBlock.vue';
   import SelectboxBlock from './contentBlocks/SelectboxBlock/SelectboxBlock.vue';
   import SimpleFileListBlock from './contentBlocks/SimpleFileListBlock/SimpleFileListBlock.vue';
+  import SimpleFileUploaderBlock from './contentBlocks/SimpleFileUploaderBlock/SimpleFileUploaderBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -174,7 +181,8 @@
       PaginationBlock,
       RadioButtonBlock,
       SelectboxBlock,
-      SimpleFileListBlock
+      SimpleFileListBlock,
+      SimpleFileUploaderBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);

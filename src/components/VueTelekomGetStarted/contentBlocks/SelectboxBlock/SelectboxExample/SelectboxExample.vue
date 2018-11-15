@@ -111,9 +111,6 @@
         selectbox3: [],
         selectboxOptions
       };
-    },
-    methods: {
-
     }
   });
 </script>

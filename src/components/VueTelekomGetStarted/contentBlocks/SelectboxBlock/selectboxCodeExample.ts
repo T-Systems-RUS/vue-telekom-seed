@@ -111,9 +111,6 @@ export const selectboxCodeExample = `<template>
         selectbox3: [],
         selectboxOptions
       };
-    },
-    methods: {
-
     }
   });
 </script>
