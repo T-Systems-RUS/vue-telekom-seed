@@ -111,6 +111,12 @@
               :id="UIComponent.RadioButton">
               <RadioButtonBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Selectbox">
+              <SelectboxBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -137,6 +143,7 @@
   import LoadingOverlayBlock from './contentBlocks/LoadingOverlayBlock/LoadingOverlayBlock.vue';
   import PaginationBlock from './contentBlocks/PaginationBlock/PaginationBlock.vue';
   import RadioButtonBlock from './contentBlocks/RadioButtonBlock/RadioButtonBlock.vue';
+  import SelectboxBlock from './contentBlocks/SelectboxBlock/SelectboxBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -158,7 +165,8 @@
       FileUploaderBlock,
       LoadingOverlayBlock,
       PaginationBlock,
-      RadioButtonBlock
+      RadioButtonBlock,
+      SelectboxBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
