@@ -31,7 +31,7 @@
               ref="content"
               class="content-block-wrap"
               :id="UIComponent.ActionsPane">
-              <ActionsPaneBlock @navigate="goToMenuItem($event)"/>
+              <ActionsPaneBlock/>
             </div>
             <div
               ref="content"
@@ -117,6 +117,12 @@
               :id="UIComponent.Selectbox">
               <SelectboxBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.SimpleFileList">
+              <SimpleFileListBlock @navigate="goToMenuItem($event)"/>
+            </div>
           </template>
         </section>
       </div>
@@ -144,6 +150,7 @@
   import PaginationBlock from './contentBlocks/PaginationBlock/PaginationBlock.vue';
   import RadioButtonBlock from './contentBlocks/RadioButtonBlock/RadioButtonBlock.vue';
   import SelectboxBlock from './contentBlocks/SelectboxBlock/SelectboxBlock.vue';
+  import SimpleFileListBlock from './contentBlocks/SimpleFileListBlock/SimpleFileListBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -166,7 +173,8 @@
       LoadingOverlayBlock,
       PaginationBlock,
       RadioButtonBlock,
-      SelectboxBlock
+      SelectboxBlock,
+      SimpleFileListBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);

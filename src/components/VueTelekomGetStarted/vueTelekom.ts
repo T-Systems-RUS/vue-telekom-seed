@@ -14,7 +14,6 @@ export enum UIComponent {
   Pagination = 'Pagination',
   RadioButton = 'RadioButton',
   Selectbox = 'Selectbox',
-  SharePane = 'SharePane',
   SimpleFileList = 'SimpleFileList',
   SimpleFileUploader = 'SimpleFileUploader',
   Slider = 'Slider',

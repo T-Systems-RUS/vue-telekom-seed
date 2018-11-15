@@ -3,10 +3,7 @@
     <h2 class="title is-2 is-main">ActionsPane</h2>
     <p>
       ActionsPane is a simple pane that has two buttons: <i>Share</i> and <i>Print</i>.
-      <i>Share</i> button will open
-      <router-link
-        @click.native="goToMenuItem(UIComponent.SharePane)"
-        :to="{query: {q: UIComponent.SharePane}}">SharePane</router-link>
+      <i>Share</i> button will open sharing panel
       flyout with the list of social networks the user can share the current page in.
       <i>Print</i> button will start page printing process.
       Please see the example below:
@@ -17,7 +14,7 @@
     </ContentBlockExample>
     <p>
       ActionsPane has no properties and doesn't emit anything to its parent. It is dependent on
-      <router-link :to="{query: {q: UIComponent.SharePane}}" target="_blank">SharePane</router-link> component.
+      SharePane component.
     </p>
   </section>
 </template>
