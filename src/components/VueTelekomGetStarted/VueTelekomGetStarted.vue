@@ -129,6 +129,12 @@
               :id="UIComponent.SimpleFileUploader">
               <SimpleFileUploaderBlock/>
             </div>
+            <div
+              ref="content"
+              class="content-block-wrap"
+              :id="UIComponent.Slider">
+              <SliderBlock/>
+            </div>
           </template>
         </section>
       </div>
@@ -158,6 +164,7 @@
   import SelectboxBlock from './contentBlocks/SelectboxBlock/SelectboxBlock.vue';
   import SimpleFileListBlock from './contentBlocks/SimpleFileListBlock/SimpleFileListBlock.vue';
   import SimpleFileUploaderBlock from './contentBlocks/SimpleFileUploaderBlock/SimpleFileUploaderBlock.vue';
+  import SliderBlock from './contentBlocks/SliderBlock/SliderBlock.vue';
 
   const SCROLL_DURATION = 200;
   const SCROLL_INTERVAL = 5;
@@ -182,7 +189,7 @@
       RadioButtonBlock,
       SelectboxBlock,
       SimpleFileListBlock,
-      SimpleFileUploaderBlock
+      SliderBlock
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);

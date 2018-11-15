@@ -92,8 +92,8 @@ export const simpleFileUploaderCodeExample = `<template>
 <script lang="ts">
   import Vue from 'vue';
   import SimpleFileList from '../../../../../common/vue-telekom/components/SimpleFileList/SimpleFileList.vue';
-  // tslint:disable-next-line
-  import SimpleFileUploader from '../../../../../common/vue-telekom/components/SimpleFileUploader/SimpleFileUploader.vue';
+  import SimpleFileUploader
+    from '../../../../../common/vue-telekom/components/SimpleFileUploader/SimpleFileUploader.vue';
   import {IFileUpload} from '../../../../../common/vue-telekom/components/FileUploader/IFileUploadList';
   import {
     FileUploadErrorType,

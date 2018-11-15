@@ -17,7 +17,6 @@ export enum UIComponent {
   SimpleFileList = 'SimpleFileList',
   SimpleFileUploader = 'SimpleFileUploader',
   Slider = 'Slider',
-  SortingHeaderCell = 'SortingHeaderCell',
   Tabs = 'Tabs',
   ToggleVisibleField = 'ToggleVisibleField',
   Tooltip = 'Tooltip'

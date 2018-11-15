@@ -146,9 +146,4 @@
 
 <style lang='scss' scoped>
   @import '../../contentBlocks';
-
-  .message {
-    margin-top: $building-unit;
-    color: $green;
-  }
 </style>
