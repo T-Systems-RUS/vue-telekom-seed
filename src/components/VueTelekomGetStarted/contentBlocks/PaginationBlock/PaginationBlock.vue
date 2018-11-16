@@ -1,7 +1,7 @@
 <template>
   <section class="content-block is-pagination">
     <h2 class="title is-2 is-main">Pagination</h2>
-    <p>A modal overlay, in which you can include any content you want. Please see the example below:</p>
+    <p>A configurable pagination component:</p>
     <ContentBlockExample>
       <PaginationExample slot="example"/>
       <template slot="code">{{ paginationCodeExample }}</template>

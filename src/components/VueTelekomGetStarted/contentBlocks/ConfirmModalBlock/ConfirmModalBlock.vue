@@ -7,11 +7,6 @@
       <template slot="code">{{ confirmModalCodeExample }}</template>
     </ContentBlockExample>
     <h4 class="title is-4">API</h4>
-    <h5 class="title is-6">Properties</h5>
-    <ul class="list">
-      <li class="list-item"><b>loadingState (type: Boolean, required: false)</b>: specifies whether loading process is
-        going on and shows LoadingOverlay component if true</li>
-    </ul>
     <h5 class="title is-6">Events</h5>
     <ul class="list">
       <li class="list-item"><b>exit ()</b>: triggers when close button or cancel is clicked</li>
