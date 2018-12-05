@@ -2,6 +2,8 @@
 
 This is a seed front-end application to use in most of our Vue.js projects.
 
+![Preview](https://raw.github.com/T-Systems-RUS/vue-telekom-seed/master/preview.gif)
+
 ## Getting Started
 
 To get the initial code please clone this repo.
